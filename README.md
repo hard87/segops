@@ -8,11 +8,11 @@
 </br>
 <ul>
   <li><b>What is it?</b></li>
-  ... TODO
+  <p>A simple project to my brother and I practice some code and cyber sec skills.</p>
   <li><b>How is it organized?</b></li>
-  ... TODO
+  <p>By study context, each folder has all scripts and instructions to learn what it propose.</p>
   <li><b>Where do I start?</b></li>
-  ... TODO
+  <p>By the <b>basics folder.</b></p>
   <li><b>What's the point?</b></li>
-  ... TODO
+  <p>Fun and learning.</p>
 </ul>
