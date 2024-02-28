@@ -10,8 +10,9 @@ func main() {
 	_, err := fmt.Scanf("%d", &opcaoEscolhida)
 	if err != nil {
 		fmt.Println(err.Error())
+	} else {
+		selecionaOpcaoEscolhida(opcaoEscolhida)
 	}
-	selecionaOpcaoEscolhida(opcaoEscolhida)
 }
 
 func escreverMenuPrincipal() {
