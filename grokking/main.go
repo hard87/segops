@@ -5,13 +5,20 @@ import (
 )
 
 func main() {
-	escreverMenuPrincipal()
-	var opcaoEscolhida int
-	_, err := fmt.Scanf("%d", &opcaoEscolhida)
-	if err != nil {
-		fmt.Println(err.Error())
-	} else {
-		selecionaOpcaoEscolhida(opcaoEscolhida)
+	
+	var opcaoEscolhida int = 1
+
+	for opcaoEscolhida != 0 {
+		escreverMenuPrincipal()
+		_, err := fmt.Scanln(&opcaoEscolhida)
+		
+	    if err != nil {
+			opcaoEscolhida = 0
+			fmt.Println(err.Error())
+			
+		}else {
+			selecionaOpcaoEscolhida(opcaoEscolhida)
+		}
 	}
 }
 
@@ -31,11 +38,11 @@ func selecionaOpcaoEscolhida(opcaoEscolhida int) {
 	switch opcaoEscolhida {
 	case 0:
 		fmt.Println("    >>> Saindo...")
-	case 1:
+	case 1:    
 		fmt.Println("    >>> Voltando...")
 	case 2:
 		fmt.Println("    >>> Brincando com listas!")
 	default:
-		fmt.Println("    >>> Opção invalida!")
+		fmt.Println("    >>> Não é uma opção valida, digite uma das opções abaixo!")
 	}
 }
